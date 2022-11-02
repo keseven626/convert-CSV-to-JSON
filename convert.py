@@ -9,8 +9,8 @@ def buildJSON(csvPath, jsonPath):
     with open(jsonPath, 'w', encoding='utf-8') as jsonf:
         jsonf.write(json.dumps(obj, indent=4))
     
-csvPath = r'Names.csv'
-jsonPath = r'Names.json'
+csvPath = r'csvFile.csv'
+jsonPath = r'JsonFile.json'
 
 # Call the make_json function
 buildJSON(csvPath, jsonPath)
