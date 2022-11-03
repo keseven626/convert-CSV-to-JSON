@@ -1,7 +1,6 @@
 import json
 import csv 
 import hashlib
-import fileinput
 
 
 def csv_to_json(csvFilePath, jsonFilePath):
