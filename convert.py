@@ -9,7 +9,7 @@ def csv_to_json(csvFilePath, jsonFilePath):
     with open(csvFilePath, encoding='utf-8') as csvf: 
         csvReader = csv.DictReader(csvf) 
 
-        filename = csvFilePath
+        filename = jsonFilePath
         sha256_hash = hashlib.sha256()
         with open(filename,"rb") as f:
             for byte_block in iter(lambda: f.read(4096),b""):
