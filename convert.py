@@ -16,6 +16,7 @@ def csv_to_json(csvFilePath, jsonFilePath):
                 sha256_hash.update(byte_block)
         
 
+
         for row in csvReader:   
             row.update({'sha256' : sha256_hash.hexdigest()})
             jsonArray.append(row)
@@ -32,3 +33,5 @@ csvFilePath = r"" f'{name}.csv' ""
 jsonFilePath = r"" f'{name}.json'""
 
 csv_to_json(csvFilePath, jsonFilePath)
+
+
